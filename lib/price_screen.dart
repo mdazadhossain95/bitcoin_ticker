@@ -119,11 +119,11 @@ class _PriceScreenState extends State<PriceScreen> {
 }
 
 class CryptoCard extends StatelessWidget {
-  const CryptoCard({
+   const CryptoCard({Key? key,
     required this.value,
     required this.selectedCurrency,
     required this.cryptoCurrency,
-  });
+  }) : super(key: key);
 
   final String? value;
   final String? selectedCurrency;
